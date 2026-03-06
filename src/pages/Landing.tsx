@@ -46,7 +46,7 @@ export default function Landing() {
         <div className="pt-6">
           <Link
             to="/store"
-            className="inline-block px-10 py-5 bg-blue-900 hover:bg-blue-800 text-lg font-bold rounded-full shadow-xl transition-all hover:scale-105 hover:shadow-blue-500/25"
+            className="inline-block px-10 py-5 bg-gray-800 hover:bg-gray-700 dark:bg-blue-900 dark:hover:bg-blue-800 text-white text-lg font-bold rounded-full shadow-xl transition-all hover:scale-105 hover:shadow-blue-500/25"
           >
             Visit the SG-AI Store
           </Link>
