@@ -40,9 +40,11 @@ export default function Store() {
   // FIX: Touch-friendly state for History Dropdown
   const [isHistoryMenuOpen, setIsHistoryMenuOpen] = useState(false);
 
-  // THEME FIX: Initialize from localStorage
+  // THEME FIX: Default to dark if no preference is saved
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    return localStorage.getItem("theme") === "dark";
+    const savedTheme = localStorage.getItem("theme");
+    // If no theme is saved, return true (dark), otherwise check if it's "dark"
+    return savedTheme === null ? true : savedTheme === "dark";
   });
 
   // SINGLE PRODUCT VIEW STATE
