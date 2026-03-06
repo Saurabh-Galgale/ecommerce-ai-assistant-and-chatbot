@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* We delete the Vite defaults so Tailwind can take over 100% of the screen.
+  We only keep this one rule so your Dark/Light mode switches smoothly! 
+*/
+html {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
