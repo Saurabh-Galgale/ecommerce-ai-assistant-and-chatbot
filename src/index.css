@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@config "../tailwind.config.js";
 
 /* We delete the Vite defaults so Tailwind can take over 100% of the screen.
   We only keep this one rule so your Dark/Light mode switches smoothly! 
